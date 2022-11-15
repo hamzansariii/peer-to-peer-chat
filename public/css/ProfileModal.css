@@ -1,0 +1,163 @@
+/* Profile modal*/
+
+
+#Profile-Modal {
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+}
+
+#Profile-Modal-Content {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+
+* {
+    margin: 0;
+    padding: 0
+}
+
+
+.btn {
+    height: 140px;
+    width: 140px;
+    border-radius: 50%
+}
+
+#username-display {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+#description-display {
+    font-size: 15px;
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+.btn1 {
+    height: 40px;
+    width: 150px;
+    border: none;
+    background-color: rgb(251, 251, 251);
+    color: #aeaeae;
+    font-size: 15px
+}
+
+.text span {
+    font-size: 13px;
+    color: #545454;
+    font-weight: 500
+}
+
+
+
+
+
+
+
+.change-username-container {
+    display: flex;
+}
+
+.change-description-container {
+    display: flex;
+}
+
+#username-input {
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    height: 25px;
+    background-color: rgba(157, 163, 163, 0.1);
+    font-weight: bold;
+    width: 100%;
+    color: rgb(195, 188, 188);
+}
+
+#username-input:focus,
+#input:focus {
+    background-color: rgba(157, 163, 163, 0.1);
+    border: 2px solid rgba(157, 163, 163, 0.1);
+}
+
+#canvas {
+    border-radius: 50%;
+}
+
+#description-input {
+    height: 25px;
+    font-size: small;
+    font-weight: bold;
+    background-color: rgba(0, 255, 255, 0.1);
+    border-color: #c8c6c6;
+    width: 100%;
+    border-radius: 2px;
+    color: #262828;
+}
+
+#update-info {
+    color: #0064bd;
+}
+
+
+
+
+/* CSS for button*/
+.profile-submit-button {
+    height: 25px;
+    background-color: #0095ff;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    box-shadow: rgba(255, 255, 255, .4) 0 1px 0 0 inset;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system, system-ui, "Segoe UI", "Liberation Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.15385;
+    margin-left: 5px;
+    outline: none;
+    padding-right: 3px;
+    padding-left: 3px;
+    padding-bottom: 10px .8em;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    white-space: nowrap;
+}
+
+.profile-submit-button:hover,
+.profile-submit-button:focus {
+    background-color: #07c;
+}
+
+.profile-submit-button:focus {
+    box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
+}
+
+.profile-submit-button:active {
+    background-color: #0064bd;
+    box-shadow: none;
+}
+
+
+
+#username-button{
+    position: absolute;
+    margin-left: -20px;
+    margin-top: 5px;
+}
+/* New*/
+

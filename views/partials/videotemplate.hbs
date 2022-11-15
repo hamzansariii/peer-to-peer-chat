@@ -1,0 +1,49 @@
+<div class="modal fade" id="VideoModal" tabindex="-1" aria-labelledby="VideoModalLabel" aria-hidden="true"
+    data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog modal-fullscreen" id="videocall-container">
+        <div class="modal-content" style="background-color: black;">
+            <div class="d-flex justify-content-center flex-nowrap" style="height: 50vh;" id="peer-video-container">
+            </div>
+            <div class="d-flex justify-content-center flex-nowrap" style="height: 50vh;">
+                <video id="your-video" class="videocall" playsinline autoplay></video>
+            </div>
+            <div class="overlay-profile" style="color: white;">
+                <div class="d-flex justify-content-center flex-nowrap" id="video-profile-description">
+                </div>
+            </div>
+            <div class="overlay-description">
+                <img src="images/text-logo.png" alt="nope" width="100px;" height="30px;">
+                <p style="color:black; margin-bottom: -3px;"><strong>.me</strong></p>
+            </div>
+            <div class="overlay-desc">
+                <div class="d-flex justify-content-center flex-nowrap">
+                    <div class="mx-2 p-2" style="background-color: white; border-radius: 50%;"
+                        id="video-button-container">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                            class="bi bi-camera-video" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2V5zm11.5 5.175 3.5 1.556V4.269l-3.5 1.556v4.35zM2 4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H2z" />
+                        </svg>
+                    </div>
+                    <div class="mx-2 p-2" style="background-color: white; border-radius: 50%;"
+                        id="mic-button-container">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                            class="bi bi-mic" viewBox="0 0 16 16">
+                            <path
+                                d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z" />
+                            <path
+                                d="M10 8a2 2 0 1 1-4 0V3a2 2 0 1 1 4 0v5zM8 0a3 3 0 0 0-3 3v5a3 3 0 0 0 6 0V3a3 3 0 0 0-3-3z" />
+                        </svg>
+                    </div>
+                    <div class="mx-2 p-2" style="background-color: white; border-radius: 50%;" id="close-video-call">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="red" class="bi bi-x-lg"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,237 @@
+/* Style for popup modals */
+
+#VideoAcceptModal {
+    border-radius: 7px;
+    overflow: hidden;
+    background-color: transparent;
+  }
+  
+  #VideoAcceptModal-Content {
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 7px;
+  }
+  
+  
+  #VideoAcceptModal-Body {
+    border-radius: 7px;
+    overflow: hidden;
+    color: black;
+    padding-left: 0px;
+    padding-right: 0px;
+    -webkit-box-shadow: 0 10px 50px -10px rgba(0, 0, 0, 0.9);
+    box-shadow: 0 10px 50px -10px rgba(0, 0, 0, 0.9);
+  }
+  
+  #VideoAcceptModal-Image{
+    height: 125px;
+    width: 125px;
+  }
+  
+  /* Css for roller Starts */
+  .lds-roller {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  
+  .lds-roller div {
+    animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    transform-origin: 40px 40px;
+  }
+  
+  .lds-roller div:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: cyan;
+    margin: -4px 0 0 -4px;
+  }
+  
+  .lds-roller div:nth-child(1) {
+    animation-delay: -0.036s;
+  }
+  
+  .lds-roller div:nth-child(1):after {
+    top: 63px;
+    left: 63px;
+  }
+  
+  .lds-roller div:nth-child(2) {
+    animation-delay: -0.072s;
+  }
+  
+  .lds-roller div:nth-child(2):after {
+    top: 68px;
+    left: 56px;
+  }
+  
+  .lds-roller div:nth-child(3) {
+    animation-delay: -0.108s;
+  }
+  
+  .lds-roller div:nth-child(3):after {
+    top: 71px;
+    left: 48px;
+  }
+  
+  .lds-roller div:nth-child(4) {
+    animation-delay: -0.144s;
+  }
+  
+  .lds-roller div:nth-child(4):after {
+    top: 72px;
+    left: 40px;
+  }
+  
+  .lds-roller div:nth-child(5) {
+    animation-delay: -0.18s;
+  }
+  
+  .lds-roller div:nth-child(5):after {
+    top: 71px;
+    left: 32px;
+  }
+  
+  .lds-roller div:nth-child(6) {
+    animation-delay: -0.216s;
+  }
+  
+  .lds-roller div:nth-child(6):after {
+    top: 68px;
+    left: 24px;
+  }
+  
+  .lds-roller div:nth-child(7) {
+    animation-delay: -0.252s;
+  }
+  
+  .lds-roller div:nth-child(7):after {
+    top: 63px;
+    left: 17px;
+  }
+  
+  .lds-roller div:nth-child(8) {
+    animation-delay: -0.288s;
+  }
+  
+  .lds-roller div:nth-child(8):after {
+    top: 56px;
+    left: 12px;
+  }
+  
+  @keyframes lds-roller {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  
+  /* Css for roller Ends */
+
+/* CSS for decision buttons */
+
+
+
+
+/* CSS for  reject button*/
+.reject-button {
+    height: 40px;
+    width: 35%;
+    background-color: #c23939;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    box-shadow: rgba(255, 255, 255, .4) 0 1px 0 0 inset;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system, system-ui, "Segoe UI", "Liberation Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.15385;
+    margin-left: 50px;
+    margin-right: 5px;
+    outline: none;
+    padding-right: 3px;
+    padding-left: 3px;
+    padding-bottom: 10px .8em;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    white-space: nowrap;
+}
+
+.reject-button:hover,
+.reject-button:focus {
+    background-color: rgb(255, 0, 0);
+}
+
+.reject-button:focus {
+    box-shadow: 0 0 0 4px rgba(199, 0, 0, 0.15);
+}
+
+.reject-button:active {
+    background-color: #b33333;
+    box-shadow: none;
+}
+
+
+
+
+/* CSS for accept button*/
+.accept-button {
+    height: 40px;
+    width: 35%;
+    background-color: #0095ff;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    box-shadow: rgba(255, 255, 255, .4) 0 1px 0 0 inset;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system, system-ui, "Segoe UI", "Liberation Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.15385;
+    margin-left: 5px;
+    outline: none;
+    padding-right: 3px;
+    padding-left: 3px;
+    padding-bottom: 10px .8em;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    white-space: nowrap;
+}
+
+.accept-button:hover,
+.accept-button:focus {
+    background-color: rgb(0, 42, 255);
+}
+
+.accept-button:focus {
+    box-shadow: 0 0 0 4px rgba(17, 65, 100, 0.15);
+}
+
+.accept-button:active {
+    background-color: #105087;
+    box-shadow: none;
+}

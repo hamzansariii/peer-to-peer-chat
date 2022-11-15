@@ -1,0 +1,73 @@
+video {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+#videocall-container {
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.videocall {
+    object-fit: cover;
+    width: 40vw;
+    height: 50vh;
+}
+
+#VideoModal {
+    background-color: black;
+}
+
+@media all and (max-width:500px) {
+    .videocall {
+        object-fit: fill;
+        width: 100vw;
+        height: 50vh;
+        border-radius: 0px;
+    }
+
+    #peer-video {
+        margin-top: 0;
+    }
+
+    #peer-video {
+        margin-bottom: 0;
+    }
+
+    #your-video {
+        margin-bottom: 0;
+    }
+}
+
+.overlay-desc {
+    position: absolute;
+    top: 85vh;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay-description {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay-profile {
+    position: absolute;
+    top: -90vh;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
