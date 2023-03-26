@@ -1,4 +1,7 @@
 /* Mobile Screen */
+#Chat-Template-Modal{
+    background-image: url('https://i.pinimg.com/736x/31/54/bf/3154bfbfdf89d42911a875984eb6f817.jpg');
+}
 @media all and (max-width:500px) {
     .msger-inputarea {
         width: 100vw;
@@ -31,6 +34,7 @@
     }
 
     #Chat-Template-Modal-Outer-Container {
+        background-image: url('https://i.pinimg.com/736x/31/54/bf/3154bfbfdf89d42911a875984eb6f817.jpg');
         width: 79vw;
         margin: 0px auto;
         margin-top: 105px;

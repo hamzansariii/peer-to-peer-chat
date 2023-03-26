@@ -2,18 +2,9 @@
 
 /* Mobile Screen */
 @media all and (max-width:500px) {
-  #Main-Footer {
-    height: 10vh;
-    width: 100%;
-  }
 
-  #Chat-Home-Navbar {
-    width: 100vw;
-    height: 10vh;
-  }
 
   #Chat-Home-User-Outer-Container {
-    margin-top: 5vh;
     height: 80vh;
   }
 
@@ -32,19 +23,10 @@
     margin: 0px auto;
   }
 
-  #Chat-Home-Navbar {
-    width: 75vw;
-    height: 10vh;
-  }
 
-  #Main-Footer {
-    width: 100vw;
-    height: 10vh;
-  }
 
   #Chat-Home-User-Outer-Container {
-    margin-top: 5vh;
-    height: 80vh;
+    height: 100vh;
   }
 
   #chat-request-button-container{
@@ -54,23 +36,7 @@
 }
 
 
-#Main-Footer {
-  position: fixed;
-  margin: 0px auto;
-  background-color: #EEEEFF;
-  left: 0px;
-  bottom: 0px;
-  margin-bottom: 0px;
-}
-
 #Chat-Home-Body {
-  background-color: #EEEEFF;
-}
-
-#Chat-Home-Navbar {
-  overflow: hidden;
-  color: white;
-  margin: 0px auto;
   background-color: #EEEEFF;
 }
 
