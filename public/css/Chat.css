@@ -13,7 +13,7 @@
   }
 
   #Chat-Home-User-Outer-Container {
-    margin-top: 10vh;
+    margin-top: 5vh;
     height: 80vh;
   }
 
@@ -29,7 +29,6 @@
 @media all and (min-width:500px) {
   #main-chat-container {
     width: 75vw;
-    border-radius: 25px;
     margin: 0px auto;
   }
 
@@ -44,7 +43,7 @@
   }
 
   #Chat-Home-User-Outer-Container {
-    margin-top: 10vh;
+    margin-top: 5vh;
     height: 80vh;
   }
 
@@ -75,14 +74,11 @@
   background-color: #EEEEFF;
 }
 
-#Chat-Home-User-Outer-Container {
-  border-radius: 25px;
-}
+
 
 
 #Chat-Home-User-List-Container {
   background-color: white;
-  border-radius: 25px;
   border-color: black;
   max-height: 100%;
   margin-bottom: 10px;

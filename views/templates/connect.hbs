@@ -18,26 +18,39 @@
   <link rel="stylesheet" href="css/videoaccept.css" type="text/css">
 
 
-
   <title>Serverless peer-to-peer chat platform.</title>
+  <style>
+    body{
+      background-image: url('https://i.pinimg.com/736x/31/54/bf/3154bfbfdf89d42911a875984eb6f817.jpg');
+    }
+  </style>
 </head>
 
 <body id="Chat-Home-Body" style="font-family: OSWALD;">
-
+  <nav class="navbar bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">P2P Chat</a>
+      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" style="color: blue;"
+        class="bi bi-globe" viewBox="0 0 16 16" id="Global-Button">
+        <path
+          d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z" />
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-pin-map"
+        viewBox="0 0 16 16" id="Nearby-Button">
+        <path fill-rule="evenodd"
+          d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8l3-4z" />
+        <path fill-rule="evenodd"
+          d="M8 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6zM4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z" />
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-circle"
+        viewBox="0 0 16 16" id="profile-setting-button" data-bs-toggle="modal" data-bs-target="#Profile-Modal">
+        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+        <path fill-rule="evenodd"
+          d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+      </svg>
+    </div>
+  </nav>
   <div id="main-chat-container">
-    <nav class="navbar fixed-top navbar-light" id="Chat-Home-Navbar">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          Serverless peer-to-peer chat platform.
-        </a>
-        <!-- HTML !-->
-        <div class="d-flex justify-content-right flex-nowrap">
-          <div class="button-content" style="margin-right: 20px;">
-            <img src="images/user.png" alt="Profile Image" width="25" height="25" id="profile-setting-button"
-              data-bs-toggle="modal" data-bs-target="#Profile-Modal">
-          </div>
-        </div>
-    </nav>
     <div class="vh-75" id="Chat-Home-User-Outer-Container">
       <div class="list-group-flush" id="Chat-Home-User-List-Container">
         <div class="inbox-message">
@@ -46,34 +59,6 @@
         </div>
       </div>
     </div>
-    <footer class="footer navbar-fixed-bottom" id="Main-Footer">
-      <div class="d-flex justify-content-center flex-nowrap" style="margin-top: 2vh; margin-bottom:2vh;">
-        <div class="mx-2 p-2" id="Global-Button" style="border-radius: 15px; background-color:white;">
-          <svg xmlns="http://www.w3.org/2000/svg" id="Global-SVG" width="25" height="25" fill="black"
-            class="bi bi-globe" viewBox="0 0 16 16">
-            <path
-              d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z" />
-          </svg>
-        </div>
-        <div class="mx-2 p-2" id="Nearby-Button" style="border-radius: 15px;">
-          <svg xmlns="http://www.w3.org/2000/svg" id="Nearby-SVG" width="25" height="25" fill="#A9A9A9"
-            class="bi bi-geo-alt" viewBox="0 0 16 16">
-            <path
-              d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
-            <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
-          </svg>
-        </div>
-        <div class="mx-2 p-2" id="Chat-Button" style="border-radius: 15px;">
-          <svg xmlns="http://www.w3.org/2000/svg" id="Chat-SVG" width="25" height="25" fill="#A9A9A9"
-            class="bi bi-chat-right-text" viewBox="0 0 16 16">
-            <path
-              d="M2 1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h9.586a2 2 0 0 1 1.414.586l2 2V2a1 1 0 0 0-1-1H2zm12-1a2 2 0 0 1 2 2v12.793a.5.5 0 0 1-.854.353l-2.853-2.853a1 1 0 0 0-.707-.293H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12z" />
-            <path
-              d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z" />
-          </svg>
-        </div>
-      </div>
-    </footer>
   </div>
   <!-- Profile Modal -->
   {{> profile }}

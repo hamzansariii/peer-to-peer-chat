@@ -139,9 +139,6 @@ function UpdateStateGlobal(ListOfUsers, Self_Details) {
                     <div class="message-body">
                       <div class="message-body-heading">
                         <h6><strong style="color:#1B1B1B;">${user.username}</strong></h6>
-                        <div id="chat-request-button-container">
-                        <button id="chat-request-button">Chat Request</button>
-                        </div>
                       </div>
                       <p>${user.status}</p>
                     </div>
@@ -304,14 +301,6 @@ function Create_Data_Channel(ChannelName) {
     
     <svg onclick=VideoCall() xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-camera-video" viewBox="0 0 16 16">
 <path fill-rule="evenodd" d="M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2V5zm11.5 5.175 3.5 1.556V4.269l-3.5 1.556v4.35zM2 4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H2z"/>
-</svg>
-
-    `
-
-    document.getElementById("Three-Dot-Button").innerHTML = `
-
-    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
-<path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
 </svg>
 
     `
@@ -527,20 +516,8 @@ async function Offer_Creation(data) {
 
 let NearbyButton = document.getElementById("Nearby-Button")
 let GlobalButton = document.getElementById("Global-Button")
-let ChatButton = document.getElementById("Chat-Button")
-let NearbySVG = document.getElementById("Nearby-SVG")
-let GlobalSVG = document.getElementById("Global-SVG")
-let ChatSVG = document.getElementById("Chat-SVG")
 
 
-ChatButton.addEventListener("click", () => {
-  ChatButton.style.backgroundColor = "white";
-  NearbyButton.style.backgroundColor = "#EEEEFF";
-  GlobalButton.style.backgroundColor = "#EEEEFF";
-  ChatSVG.style.fill = "black";
-  GlobalSVG.style.fill = "#A9A9A9"
-  NearbySVG.style.fill = "#A9A9A9"
-})
 
 
 
@@ -548,13 +525,8 @@ NearbyButton.addEventListener("click", () => {
   Global_Flag = false;
   Nearby_Flag = true;
   UpdateStateNearby(List_Of_Users_With_Location, Self_Details)
-  NearbyButton.style.backgroundColor = "white";
-  GlobalButton.style.backgroundColor = "#EEEEFF";
-  ChatButton.style.backgroundColor = "#EEEEFF";
-  NearbySVG.style.fill = "black"
-  GlobalSVG.style.fill = "#A9A9A9"
-  ChatSVG.style.fill = "#A9A9A9"
-
+  NearbyButton.style.color = "blue";
+  GlobalButton.style.color = "black";
 })
 
 
@@ -562,12 +534,8 @@ GlobalButton.addEventListener("click", () => {
   Global_Flag = true;
   Nearby_Flag = false;
   UpdateStateGlobal(List_Of_Users, Self_Details)
-  GlobalButton.style.backgroundColor = "white";
-  NearbyButton.style.backgroundColor = "#EEEEFF";
-  ChatButton.style.backgroundColor = "#EEEEFF";
-  GlobalSVG.style.fill = "black"
-  ChatSVG.style.fill = "#A9A9A9"
-  NearbySVG.style.fill = "#A9A9A9"
+  GlobalButton.style.color = "blue";
+  NearbyButton.style.color = "black";
 
 })
 
